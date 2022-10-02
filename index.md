@@ -2,3 +2,4 @@
 
 [Module Introduction](./content/ModuleIntroduction/moduleIntroduction.html)
 
+[Introduciton to Software Engineering](./content/IntroductionToSoftwareEngineering/IntroductionToSoftwareEngineering.html)
