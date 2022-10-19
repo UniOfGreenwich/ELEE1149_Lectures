@@ -54,6 +54,7 @@ A software process is a structured set of activities required to develop a softw
     - **Evolution** – changing the system in response to changing customer needs.
 
 </details>
+<p></p>
 A software process model is an abstract representation of a process. It presents a description of a process from some particular perspective.
 
 ---
