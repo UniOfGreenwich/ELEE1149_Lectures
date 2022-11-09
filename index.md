@@ -9,3 +9,5 @@
 [Software Process Models](./content/SoftwareProcessModels/SoftwareProcessModels.html)
 
 [Requirements Engineering](./content/RequirementsEngineering/RequirementsEngineering.html)
+
+[Requirements Engineering Part 2](./content/RequirementsEngineeringPt2/RequirementsEngineeringPt2.html)

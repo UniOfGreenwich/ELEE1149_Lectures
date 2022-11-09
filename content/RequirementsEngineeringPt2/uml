@@ -1,0 +1,26 @@
+https://www.plantuml.com/plantuml/umla/
+
+@startuml
+!theme mars
+skinparam actorStyle awesome
+usecase "Register patient" as RP
+usecase "View Personal Info." as VPI
+usecase "View Record" as VR
+usecase "Edit Record" as ER
+usecase "Setup Consultation" as SC
+usecase "Export Statistics" as ES
+usecase "Generate Report" as GR
+
+:Medical Receptionist: --> (RP)
+:Medical Receptionist: --> (VPI)
+(VPI) <--> :Manager:
+:Manager: --> (ES)
+:Manager: --> (GR)
+:Nurse: --> (VR)
+:Nurse: --> (ER)
+:Doctor: --> (VR)
+:Doctor: --> (ER)
+:Doctor: --> (GR)
+:Doctor: --> (SC)
+@enduml
+
