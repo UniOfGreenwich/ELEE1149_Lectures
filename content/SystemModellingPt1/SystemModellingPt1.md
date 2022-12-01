@@ -285,6 +285,8 @@ https://mermaid.live/edit#pako:eNp1Uk1PwzAM_StWTkO0fyCHSUUFaYLCBBqnXqzEoxFtUtIUh
 
 </details>
 
+---
+
 ## Structural models
 
 - **Structural models** of the software display the organization of a system in terms of the components that make up that system and their relationships. 
