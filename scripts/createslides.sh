@@ -14,8 +14,8 @@ source ${MODULE_DIR}/config
 
 cat >> ${LECTURE_FOLDER}/${LECTURE_FILENAME}.md << EOF
 ---
-title: DOCUMENT TITLE
-description: DESCRIPTION OF DOCUMENT
+title: ${LECTURE_FILENAME}
+description: ${LECTURE_FILENAME}
 class: gaia
 _class:
   - lead
@@ -43,7 +43,7 @@ marp: true
 math: true
 ---
 
-# LECTURE TITLE
+# ${LECTURE_FILENAME}
 
     Course Code: $coursecode
 
