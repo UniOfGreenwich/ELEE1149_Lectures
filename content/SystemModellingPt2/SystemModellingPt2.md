@@ -147,7 +147,7 @@ https://kroki.io/mermaid/svg/eNptkLEOgyAURfd-xRttGn_AgaFputrEtItxIPC0pIgWwe-vQrF
 - In UML state chart diagrams, rounded rectangles represent systems states
 
 - They may include a brief description (following “do”) of the actions taken in that state
-- 
+
 - The labelled arrows represent stimuli that force a transition from one state to another
 
 - Start and end can be indicated using filled circles as in activity diagrams
@@ -186,6 +186,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 
 ## States and stimuli for the microwave oven (1) 
 
+<div align=center>
 
 |State|Description|
 |---|---|
@@ -197,9 +198,13 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 |Enabled|Oven operation is enabled. Interior oven light is off. Display shows ‘Ready to cook’.|
 |Operation|Oven in operation. Interior oven light is on. Display shows the timer countdown. On completion of cooking, the buzzer is sounded for five seconds. Oven light is on. Display shows ‘Cooking complete’ while buzzer is sounding.|
 
+</div>
+
 ---
 
 ## States and stimuli for the microwave oven (2) 
+
+<div align=center>
 
 |State|Description|
 |---|---|
@@ -211,6 +216,8 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 |Door Closed|The oven door switch is closed.|
 |Start|The user has pressed the Start button.|
 |Cancel|The user has pressed the Cancel button.|
+
+</div>
 
 ---
 
