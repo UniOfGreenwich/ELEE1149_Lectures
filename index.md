@@ -20,3 +20,4 @@
 
 [Architectural Design](./content/ArchitecturalDesign/ArchitecturalDesign.html)
 
+[Architectural Pattern](./content/ArchitecturalPattern/ArchitecturalPattern.html)
