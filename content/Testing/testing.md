@@ -217,7 +217,7 @@ Scenario: Account has sufficient funds
 
 ## Unit Testing
 
-W- e write unit tests to test units of the program
+- We write unit tests to test units of the program
 
 - The are usually functions or class methods
 
