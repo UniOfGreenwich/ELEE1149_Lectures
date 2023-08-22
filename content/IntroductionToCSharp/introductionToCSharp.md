@@ -80,7 +80,7 @@ math: true
 ```csharp
 Console.WriteLine("Hello World");
 
-var names = new[] { "Ana", "Felipe", "Emilia" };
+var names = new[] { "Ada", "Felipe", "Emilia" };
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name}"); //similar to Kotlins string literals
@@ -92,7 +92,7 @@ foreach (var name in names)
 
 ```
 Hello World
-Hello Ana
+Hello Ada
 Hello Felipe
 Hello Emilia
 ```
@@ -115,8 +115,10 @@ Hello Emilia
 - 6 Contextual Keywords
 - 14 Query Keywords
 
+![bg right:50% 90%](https://www.hallaminternet.com/assets/Keywords-everywhere-The-Simpsons-970x727.jpg)
 <!--
 Total - 101 keywords
+- These keywords are reserved... meaning you cannot declare them.
 -->
 ---
 
@@ -136,7 +138,7 @@ Total - 101 keywords
 ##  Naming Convention
 
 - PascalCase
-  - class, struct, method, property, or constant field
+  - class, struct, method, namespace, property, or constant field
 ```csharp
 namespace ExampleApp
 {
@@ -202,7 +204,6 @@ class AppNotification
 ```
 ---
 
-##
+##  Labs
 
-
----
+You are going to follow a detailed lab on building some C# programs so you can gain some experience.
