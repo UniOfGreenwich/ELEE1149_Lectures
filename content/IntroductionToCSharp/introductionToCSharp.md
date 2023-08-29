@@ -37,6 +37,7 @@ math: true
 
 - If you have experience with JavaScript, Java, or C++? 
   - You'll find C# instantly familiar, and you'll enjoy its evolving features including type safety, generics, pattern matching, async, records, and more.
+
 ---
 
 ## .NET Framework and C#
@@ -155,7 +156,6 @@ namespace ExampleApp
     }
 }
 ```
-
 ---
 
 ## Naming Convention
