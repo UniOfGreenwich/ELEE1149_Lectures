@@ -285,7 +285,7 @@ While all software projects have to be professionally managed and developed, dif
 
 ## Activity model of the insulin pump
 
-![h:350](../../figures/activityModelInfusionPump.png)
+![w:1000](../../figures/activityModelInfusionPump.png)
 
 ---
 
