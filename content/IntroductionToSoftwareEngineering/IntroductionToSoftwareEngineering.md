@@ -36,7 +36,7 @@ math: true
 - The economies of ALL developed nations are dependent on software
 - More and more systems are software controlled
 - **Software engineering is concerned with theories, methods and tools for professional software development**
-- Expenditure on software represents a significant fraction of GNP in all developed countries
+- Expenditure on software represents a significant fraction of GNP in all global north countries
 - **Questions:**
   - Does it cost more to develop or to maintain software? Why?
   - What is more expensive on a PC – software or hardware?
@@ -50,6 +50,28 @@ math: true
 - Software costs more to maintain than it does to develop. For systems with a long life, maintenance costs may be several times development costs
 
 - Software engineering is concerned with cost-effective software development
+
+---
+
+
+## Software Cost Formula
+
+$$ E = a \cdot (KLOC)^b \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \  T = c \cdot (E)^d$$
+
+Where: 
+- E = Effort, T = Development Time, 
+- KLOC = Thousands of Lines of Code
+- $a$, $b$, $c$ and $d$ are constants defined below:
+
+<div align="center" >
+ 
+| Software Project| a|b|c|d|
+|---|---|---|---|---|
+|Organic|3.2|1.05|2.5|0.38|
+|Semi-detached|3|1.12|2.5|0.35|
+|Embedded|2.8|1.20|2.5|0.32|
+
+</div>
 
 ---
 
