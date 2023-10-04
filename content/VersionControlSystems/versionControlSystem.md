@@ -43,7 +43,7 @@ math: true
 ## What are Version Control Systems (VCS)
 
 - Tracking and managing changes: 
-  - Work fasert and more reliably
+  - Work faster and more reliably
   
 - Keeps track of all code modifications:
   - Specialised Database (Repository)
@@ -72,7 +72,7 @@ math: true
 ## Types of VCS
 
 - **Local**:
-  - Creates a database on the hardware ​
+  - Creates a database on the your hardware ​
 - **Centralised​**:
   - History of changes kept in a single database in a central server.​
   - Clients need to constantly communicate with the database and receive a partial working copy.​
@@ -82,13 +82,59 @@ math: true
   - Each client has a full working copy of the repository​
 
 ---
+
+## VCS - List
+
+![bg right:50% 50%](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Apache_Subversion_logo.svg/1280px-Apache_Subversion_logo.svg.png)
+<div style="font-size:22px">
+
+**Local Data Model**
+- Revision Control System (RCS) [OS]
+- Source Code Control System (SCCS) [OS]
+- The Librarian [P]
+- Panvalet [P]
+
+**Client Server model**
+- Concurrent Versions System [OS]
+- Subversion (SVN) [OS]
+- Vesta [OS]
+- AccuRev [P]
+- Autodesk Vault [P]
+- CADES [P]
+- ...
+- Vault [P]
+- Visual Source Safe [P]
+
+</div>
+
+---
+
+## VCS - List
+
+![bg right:50% 25% vertical](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Fossil_SCM_logo.svg/170px-Fossil_SCM_logo.svg.png)
+![bg right:50% 25% vertical](../../figures/git.png)
+![bg right:50% 25% vertical](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mercurial_no_border_logo.svg/800px-Mercurial_no_border_logo.svg.png)
+
+**Distrubted Model**
+
+- ArX [OS]
+- Bazaar [OS]
+- BitKeeper [OS]
+- Fossil [OS]
+- Git [OS]
+- GNU Arch [OS]
+- Mecurial [OS]
+- Code Co-op [P]
+- Sun WorkShop TeamWare [P]
+- Plastic SCM [P]
+---
 ## Git
 
-- Version Control Systems: How to safely organise and backup your software code
+- VCS: How to safely organise and backup your software code
 
-- Git: Most popular Version Control System
+- Git: Most popular VCS
 
-- GitHub: Version Control System host
+- GitHub: VCS **host**
 
 ![bg right:50% 50% vertical](../../figures/git.png)
 
@@ -112,6 +158,26 @@ math: true
 ![bg right:40% 60%](../../figures/git.png)
 
 --- 
+
+## VCS Hosts - List
+![bg right:50% 30% vertical](https://www.guru99.com/images/1/120718_0548_13BestGithu7.png)
+![bg right:50% 20% vertical](https://www.guru99.com/images/1/120718_0548_13BestGithu4.png)
+![bg right:50% 30% vertical](https://www.guru99.com/images/1/120718_0548_13BestGithu2.png)
+![bg right:50% 30% vertical](https://www.guru99.com/images/2/taravault-logo.png)
+![bg right:50% 30% vertical](https://www.guru99.com/images/1/120718_0548_13BestGithu6.png)
+
+- TaraVault
+- BitBucket
+- SourceForg
+- GitLab
+- Gogs
+- GitBucket
+- GitHub
+- AWS CodeCommit
+- BeanStalk
+- Phabricator
+- ...many more
+---
 
 ## GitHub - What is it and features?
 
