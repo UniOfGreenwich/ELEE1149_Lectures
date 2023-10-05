@@ -128,19 +128,6 @@ math: true
 - Sun WorkShop TeamWare [P]
 - Plastic SCM [P]
 ---
-## Git
-
-- VCS: How to safely organise and backup your software code
-
-- Git: Most popular VCS
-
-- GitHub: VCS **host**
-
-![bg right:50% 50% vertical](../../figures/git.png)
-
-![bg right:50% 50% vertical](../../figures/githublogo.png)
-
----
 
 ## Git Characteristics 
 
@@ -149,11 +136,11 @@ math: true
   - Better performance compared to competitors
   - Deals with the data in the file rather than the file properties
 - Security
-  - Designed to provided security
-  - Uses SHA-256
+  - Designed to provide security
+  - Uses SHA-256 encryption
 - Flexibility
   - Non-linear development
-  - Detailed log information
+  - Detailed log of information
 
 ![bg right:40% 60%](../../figures/git.png)
 
