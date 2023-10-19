@@ -110,7 +110,7 @@ Therefore:-
 
 ## Waterfall Model
 
-![h:600 center](../../figures/waterfall.png)
+![h:500 center](../../figures/waterfall.png)
 
 ---
 
@@ -219,9 +219,6 @@ There are separate identified phases in the waterfall model:
 ![h:350 w:1920 center](../../figures/reuse.png)
 
 ---
-
-
-
 
 ## Reuse-Oriented Software Engineering: Key Process Stages
 
