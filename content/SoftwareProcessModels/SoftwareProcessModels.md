@@ -89,7 +89,7 @@ When we describe and discuss software processes, we usually talk about the activ
 ## Plan-driven and Agile Processes
 Therefore:-
 
-- **Plan-drive** is for safety-critical systems, a very structured development process is required where detailed records are maintained
+- **Plan-driven** is for safety-critical systems, a very structured development process is required where detailed records are maintained
 
 - **Agile Processes** is for business systems, with rapidly changing requirements, and more flexible, agile process is likely to be better
 
