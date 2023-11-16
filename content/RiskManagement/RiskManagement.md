@@ -133,12 +133,21 @@ So what does risk management involve?
 
 ## Risk classification
 
-- There are two dimensions of risk classification
-  - The type of risk (technical, organizational, ..) 
-  - What is affected by the risk:
-    - **Project risks** affect schedule or resources;
-    - **Product risks** affect the quality or performance of the software being developed;
-    - **Business risks** affect the organisation developing or buying the software.
+There are two dimensions of risk classification
+
+![w:900 center](https://www.researchgate.net/profile/Muhammad-Jamaluddin-Thaheem/publication/303805586/figure/fig5/AS:614277325025293@1523466535439/4-Risk-classification.png)
+
+
+--- 
+
+## What is affected by the risk
+
+  - **Project risks** 
+    - affect schedule or resources;
+  - **Product risks**  
+    - affect the quality or performance of the software being developed;
+  - **Business risks** 
+    - affect the organisation developing or buying the software.
 
 ---
 
