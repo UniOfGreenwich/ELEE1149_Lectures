@@ -13,14 +13,6 @@ style: |
       display: block;
       margin: 0 auto;
     }
-    table {
-        border-collapse: collapse;
-        font-size: 30px;
-      }
-    table, th,tr, td {
-         border: none!important; 
-          vertical-align: middle;
-      }
 size: 16:9
 paginate: true
 _paginate: false
@@ -266,3 +258,155 @@ There are two dimensions of risk classification
 
 ---
 
+## Using RAG/BRAG in Risk Management
+
+- **RAG (Red, Amber, Green):**
+  - Red: Critical risks requiring immediate attention.
+  - Amber: Risks needing monitoring and potential mitigation.
+  - Green: Risks under control or with acceptable impact.
+
+- **BRAG (Blue, Red, Amber, Green):**
+  - Blue: Potential opportunities (optional).
+  - Red: Critical risks.
+  - Amber: Risks requiring attention.
+  - Green: Risks under control or resolved.
+---
+
+## BRAG Risk Management Status
+
+<div class="brag-container">
+  <div class="brag-item blue">
+    <h2>Blue</h2>
+    <p>Potential Opportunities</p>
+  </div>
+  <div class="brag-item red">
+    <h2>Red</h2>
+    <p>Critical Risks</p>
+  </div>
+  <div class="brag-item amber">
+    <h2>Amber</h2>
+    <p>Risks Requiring Attention</p>
+  </div>
+  <div class="brag-item green">
+    <h2>Green</h2>
+    <p>Risks Under Control or Resolved</p>
+  </div>
+</div>
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  .brag-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .brag-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  .blue { background-color: #3498db; color: #fff; }
+  .red { background-color: #e74c3c; color: #fff; }
+  .amber { background-color: #f39c12; color: #fff; }
+  .green { background-color: #2ecc71; color: #fff; }
+</style>
+
+---
+
+## RAG Risk Management Matrix
+ <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th class="red">Red</th>
+        <th class="amber">Amber</th>
+        <th class="green">Green</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Category 1</strong></td>
+        <td class="red">Critical Risks</td>
+        <td class="amber">Risks Needing Attention</td>
+        <td class="green">Risks Under Control or Resolved</td>
+      </tr>
+      <tr>
+        <td><strong>Category 2</strong></td>
+        <td class="red">More Critical Risks</td>
+        <td class="amber">Risks Requiring Monitoring</td>
+        <td class="green">Risks Under Control or with Acceptable Impact</td>
+      </tr>
+      <tr>
+        <td><strong>Category 3</strong></td>
+        <td class="red">Yet Another Critical Risk</td>
+        <td class="amber">Risks to Address Soon</td>
+        <td class="green">Risks Under Control or Resolved</td>
+      </tr>
+    </tbody>
+  </table>
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .red { background-color: #e74c3c; color: #fff; }
+  .amber { background-color: #f39c12; color: #fff; }
+  .green { background-color: #2ecc71; color: #fff; }
+</style>
+
+---
+
+## Implementing RAG/BRAG in Software Projects
+
+- **Assigning Colors:**
+  - Criteria for assigning Red, Amber, Green (or Blue) to risks.
+  - Consistent application across the project.
+
+- **Regular Updates:**
+  - Periodic reviews and updates of risk status.
+  - Real-time adjustments based on project dynamics.
+
+---
+
+## Benefits of RAG/BRAG in Software Risk Management
+
+- **Clear Communication:**
+  - Simple visual indicators enhance communication.
+  - Stakeholders quickly grasp the project's risk status.
+
+- **Proactive Decision-Making:**
+  - Enables proactive decision-making.
+  - Focuses attention on critical risks for timely resolution.
+
+- **Continuous Improvement:**
+  - Facilitates continuous improvement.
+  - Lessons learned from past projects inform future risk management strategies.
+
+---
+
+## RAG for Risk Matrix
+
+![w:1000](https://www.researchgate.net/publication/328924785/figure/fig1/AS:692675720249347@1542158169809/A-risk-matrix-with-associated-red-amber-green-RAG-organisational-risk-acceptancegreen_W640.jpg#center)
+
+---
+
+## RAG for RisK Matrix
+
+![](../../figures/riskMatrix.png)

@@ -89,7 +89,7 @@ When we describe and discuss software processes, we usually talk about the activ
 ## Plan-driven and Agile Processes
 Therefore:-
 
-- **Plan-drive** is for safety-critical systems, a very structured development process is required where detailed records are maintained
+- **Plan-driven** is for safety-critical systems, a very structured development process is required where detailed records are maintained
 
 - **Agile Processes** is for business systems, with rapidly changing requirements, and more flexible, agile process is likely to be better
 
@@ -110,7 +110,7 @@ Therefore:-
 
 ## Waterfall Model
 
-![h:600 center](../../figures/waterfall.png)
+![h:500 center](../../figures/waterfall.png)
 
 ---
 
@@ -219,9 +219,6 @@ There are separate identified phases in the waterfall model:
 ![h:350 w:1920 center](../../figures/reuse.png)
 
 ---
-
-
-
 
 ## Reuse-Oriented Software Engineering: Key Process Stages
 
