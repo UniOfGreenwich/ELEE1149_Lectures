@@ -149,6 +149,18 @@ There are two dimensions of risk classification
 
 ---
 
+## Segway : CASE Tooling
+
+**Computer Aided Software Engineering**
+
+- Diagramming Tools
+- Computer Display and Report Generators
+- Analysis Tools
+- Central Repository
+- Documentation Generators
+- Code Generators
+---
+
 ## The risk management process
 
 - *Risk identification*
