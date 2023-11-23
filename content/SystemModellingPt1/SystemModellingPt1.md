@@ -67,7 +67,7 @@ math: true
   
   - An *interaction perspective*, where you model the interactions between a system and its environment, or between the components of a system.
   
-  - A *structural perspective*, where you model the organization of a system or the structure of the data that is processed by the system.
+  - A *structural perspective*, where you model the organisation of a system or the structure of the data that is processed by the system.
   
   - A *behavioural perspective*, where you model the dynamic behaviour of the system and how it responds to events. 
 
@@ -281,7 +281,7 @@ https://mermaid.live/edit#pako:eNp1Uk1PwzAM_StWTkO0fyCHSUUFaYLCBBqnXqzEoxFtUtIUh
 
 - **Sequence diagram** is representing the sequence of messages flowing from one object to another, how their messages/events are exchanged in what time-order.
 
-- Sequence diagram may also express conditions, loops and concurrency by using alt for example, but they are not as intuitive and convenient as those in activity diagram.
+> Sequence diagram may also express conditions, loops and concurrency by using **alt** for example, but they are not as intuitive and convenient as those in activity diagram.
 
 </details>
 
