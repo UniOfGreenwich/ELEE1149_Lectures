@@ -15,7 +15,7 @@ style: |
     }
     table {
         border-collapse: collapse;
-        font-size: 30px;
+        font-size: 24px;
       }
     table, th,tr, td {
          border: none!important; 
@@ -186,7 +186,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 
 ## States and stimuli for the microwave oven (1) 
 
-<div align=center>
+<p style="font-size:20px">
 
 |State|Description|
 |---|---|
@@ -198,7 +198,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 |Enabled|Oven operation is enabled. Interior oven light is off. Display shows ‘Ready to cook’.|
 |Operation|Oven in operation. Interior oven light is on. Display shows the timer countdown. On completion of cooking, the buzzer is sounded for five seconds. Oven light is on. Display shows ‘Cooking complete’ while buzzer is sounding.|
 
-</div>
+</p>
 
 ---
 
