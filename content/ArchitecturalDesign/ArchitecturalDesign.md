@@ -46,8 +46,6 @@ math: true
 
 - Architectural views
 
-- Question: What is a system architecture for a software product?
-
 ---
 
 ## Architectural design
