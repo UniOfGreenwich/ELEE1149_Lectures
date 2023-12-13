@@ -10,7 +10,7 @@ style: |
       float: right;
     }
     table{
-      font-size: 18 px;
+      font-size: 16 px;
     }
 size: 16:9
 paginate: true
@@ -45,14 +45,47 @@ math: true
 |C#|.NET|
 |---|---|
 |A programming language|A developer platform|
-|Open-source|Open-source|
+|Open-source|Partially Open-source|
 |Created by Microsoft|Created by Microsoft|
 |Part of the .NET ecosystem|Supports coding in C# and multiple other languages|
 |Easy to learn|Hard to learn|
 |Used to develop desktop apps, web apps, services, APIs, games, cloud apps, mobile apps| Used for frontend and backend development, cloud, mobile, desktop, web application development, as well as IoT, ML, gaming apps|
 
+<!--
+Common Language Runtime (CLR) is an execution environment where the software programs coded in .Net are executed. Framework Class Library (FCL) consists of a wide number of class libraries that the .Net framework contains.
+-->
+---
+## .NETCORE
+
+**When the project:** 
+- needs or requires the buildout of microservices.
+- needs or requires cross-platform.
+- hugely relies on CLI as .Net core would be preferred for CLI (Command Language Interface) tools.
+- needs to be built from scratch as the .Net core would be the future design.
+- The project is expected to have high performance and scalability
+
+>Note:
+>>Functionalities that are not provided by .Net core. For eg: Windows forms, WPF applications, WCF services, ASP.NET Web forms, etc
 ---
 
+## C# History & Release schedule
+
+<div align=center>
+
+|Version|Release Date||Version|Release Date|
+|---|---|---|---|---|
+|12|Novemeber 2023||7.0|March 2017|
+|11 |November 2022||6.0|July 2015|
+|10 |November 2021||5.0|August 2012|
+|09 |November 2020||4.0|April 2010|
+|08|November 2019||3.0|Novemeber 2007|
+|7.3|May 2018||2.0|November 2005|
+|7.2|November 2017||1.2|April 2003|
+|7.1|August 2017||1.0|January 2002|
+
+</div>
+
+---
 ## Data Types in C#
 
 ![w:1000 center](../../figures/csharpDataTypes.png)
@@ -183,7 +216,7 @@ public void MethodNamingConvention(string methodsArgNamingConvention)
 
 ---
 
-## Meaningful Names
+## Meaningful Names (aka Clean Code)
 
 ```csharp
 class AppNotification
@@ -204,6 +237,72 @@ class AppNotification
 ```
 ---
 
+## What is Visual Studio?
+
+- **Visual Studio (VS)** is an integrated development environment (IDE) developed by Microsoft.
+- It supports a wide range of programming languages and frameworks.
+
+---
+
+## Uses of Visual Studio
+
+**Software Development**: 
+
+- **C# and .NET Development** 
+  - Visual Studio is widely used for `C#` and `.NET` application development.
+
+- **Web Development** 
+  - It supports web development with languages like `HTML`, `CSS`, and `JavaScript`.
+
+- **Multi-Language Development** 
+  - `C`, `C++`, `C++/CLI`, `Visual Basic`, `F#`, `TypeScript`, `XAML`, `XML`, `XSLT`, and more...
+
+---
+
+## Pros of Visual Studio
+
+<div style="font-size:24px">
+
+**Has rich features:**
+
+- **Intelligent Code Editing:** 
+  - Powerful code editing features with IntelliSense.
+
+- **Debugging Tools** 
+   - Excellent debugging tools for efficient troubleshooting.
+
+- **Integrated Git Support** 
+  - Built-in Git integration for version control.
+
+**Extensibility:**
+
+- **Vast Extension** 
+  - Extensive marketplace for extensions to enhance functionality.
+
+- **Customization** 
+  - Users can customize the IDE according to their preferences.
+
+</div>
+
+---
+
+## Cons of Visual Studio
+
+**Resource Intensive:**
+
+- **High System Requirements -** Visual Studio can be resource-intensive, requiring a powerful system.
+
+- **Large Installation Size -** The IDE has a large installation size.
+
+**Learning Curve**
+
+- **Complexity -** Beginners might find Visual Studio's extensive features initially overwhelming.
+
+---
+
 ##  Labs
 
-You are going to follow a detailed lab on building some C# programs so you can gain some experience.
+You are going to follow a detailed lab on building some C# programs so you can gain some experience. 
+
+
+- ## This will be a do as I do.
