@@ -114,6 +114,7 @@ math: true
 
 ## What does Open Source Mean?
 
+![bg right:60% 90%](../../figures/OpenSource.png)
 
 ---
 
@@ -121,7 +122,7 @@ math: true
 
 - **Open source development** is an approach to software development in which the source code of a software system is published and volunteers are invited to participate in the development process
 
-- Its roots are in the **Free Software Foundation** (www.fsf.org), which advocates that source code should not be proprietary but rather should always be available for users to examine and modify as they wish. 
+- Its roots are in the **Free Software Foundation** ([www.fsf.org](www.fsf.org)), which advocates that source code should not be proprietary but rather should always be available for users to examine and modify as they wish. 
 
 - Open source software extended this idea by using the Internet to recruit a much larger population of volunteer developers. Many of them are also users of the code.
 
@@ -178,3 +179,44 @@ math: true
 - The GNU Lesser General Public License (LGPL) is a variant of the GPL license where you can write components that link to open source code without having to publish the source of these components. 
 
 - The Berkley Standard Distribution (BSD) License. This is a non-reciprocal license, which means you are not obliged to re-publish any changes or modifications made to open source code. You can include the code in proprietary systems that are sold.
+
+---
+
+## [Hubot Licence (MIT)](https://github.com/hubotio/hubot/blob/main/LICENSE.md)
+
+![](../../figures/MIT.png)
+
+<div style="font-size:20px">
+
+```md
+Copyright (c) 2011-2023 GitHub Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+</div>
+
+---
+
+## Licensing a Repository
+
+- [Github.com - Licensing](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
+
+- [Creative Commons](https://chooser-beta.creativecommons.org/)
