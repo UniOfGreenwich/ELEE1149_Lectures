@@ -21,6 +21,7 @@ style: |
       border: none!important;
       vertical-align: middle;
     }
+    @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 size: 16:9
 paginate: true
 _paginate: false
@@ -54,8 +55,6 @@ math: true
 
 ---
 
----
-
 ## Classes & Objects (2)
 
 - **Class**
@@ -72,16 +71,43 @@ math: true
 
 ## Class - an Example
 
-<div align=center>
+<div class="grid grid-cols-2 gap-4">
+<div>
 
 ![h:500](../../figures/class_diagram.svg)
 
 </div>
 
+<div style="font-size:26px; margin-top:1px ">
+
+```c#
+class Module {
+ string name;
+ string code;
+ int year;
+
+ register(){
+
+ }
+
+ unregister(){
+
+ }
+
+}
+
+```
+
+</div>
+<div>
+
 ---
 
-## Class – an Example 2
+## Objects
 
+
+- An Object is an instance of a class and a group of objects for the same class have sepatate memory addresses. 
+  
 <div align=center>
 
 ![h:500](../../figures/class_diagram_2.svg)
@@ -91,29 +117,53 @@ math: true
 
 ---
 
-## Objects
-
-- An Object is an instance of a class and a group of objects for the same class have sepatate memory addresses. 
-  
--
-
----
 
 ## Abstraction
 
--
+- Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either `abstract` classes or `interfaces` 
 
-- 
+- The `abstract` keyword is used for classes and methods:
+  - Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+
+  - Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
 
 ---
+
 
 ## Inheritance
 
 - Another class can inherit another classes functionality
 - All methods, fields, variables, functions etc must be implemented and cannot be modified.
+- Class can inherit only one abstract class.
+- Optional implementation of abstract class internals.
+
 
 ---
+## Inheritance and abstraction 
 
+```c#
+abstract class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public abstract void DisplayDetails();
+}
+
+class Student : Person
+{
+    public int StudentId { get; set; }
+
+    public override void DisplayDetails()
+    {
+        Console.WriteLine($"Student: {Name}, Age: {Age}, Student ID: {StudentId}");
+    }
+}
+
+```
+
+---
 
 ## Interface
 
