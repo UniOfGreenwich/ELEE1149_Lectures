@@ -140,7 +140,7 @@ Abstraction can be achieved with either `abstract` classes or `interfaces`
 
 
 ---
-## Inheritance and abstraction 
+## Example: Inheritance and abstraction 
 
 ```c#
 abstract class Person
@@ -155,12 +155,12 @@ class Student : Person
 {
     public int StudentId { get; set; }
 
+    // function and fields all must be implemented.
     public override void DisplayDetails()
     {
         Console.WriteLine($"Student: {Name}, Age: {Age}, Student ID: {StudentId}");
     }
 }
-
 ```
 
 ---
@@ -177,8 +177,166 @@ class Student : Person
 
 ## Dependency Injection
 
-- 
+- DI is a design pattern widely used in C# development for achieving Inversion of Control (IoC).
+
+- In DI, dependencies of a class are provided from the outside, rather than the class creating its own dependencies.
+
+![bg right:50% 80%](https://imgs.xkcd.com/comics/dependency.png)
 
 ---
 
+## Key Concepts:
 
+<div style="font-size:24px">
+
+- **Inversion of Control (IoC):**
+
+  - In IoC, control over object creation and management is shifted from the class itself to an external entity.
+
+- **Dependency:**
+
+  - A dependency is an object that another object relies on to accomplish its tasks.
+
+- **Injection:**
+
+  - Injection involves providing dependencies to a class from an external source.
+
+- **Types of Dependency Injection in C#:**
+
+ - Constructor Injection
+   - Setter Injection
+   - Interface Injection
+
+</div>
+
+---
+
+## Example: Interface
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+```c#
+// declare interface
+interface IMyInterface {
+  // prototpes
+  void MyFuncton(int a, int b);
+  void AnotherFunction(); 
+}
+
+// implement interface
+class MyClass : IMyInterface {
+
+  // can add some fuctionality here
+  void MyFuction(int a,int b){
+      System.out.writeln(a+b);
+  }
+  
+  void AnotherFunction(){
+    // Not inuse.
+  }
+}
+
+```
+</div>
+<div>
+
+```c#
+class AnotherClass: IMyInterface {
+  
+   // can add some fuctionality here
+  void MyFuction(int a,int b){
+      Console.writeline(a*b);
+  }
+  
+  
+  void AnotherFunction(){
+    
+    Random rnd = new Random();
+
+    for (int j = 0; j < 4; j++)
+    {
+        Console.WriteLine(rnd.Next());
+    }
+  }
+
+}
+
+
+```
+
+</div>
+</div>
+
+--- 
+
+## Example 2: 
+
+<div class="grid grid-cols-2 gap-4">
+<div style="margin-top:30px">
+
+```c#
+// Interface for items that can be picked up
+public interface IItem
+{
+    void PickUp();
+}
+
+// Interface for the player character
+public interface IPlayer
+{
+    void PickUpItem(IItem item);
+}
+```
+
+</div>
+<div>
+
+```c#
+// Implementation of an item that can be picked up
+public class Coin : IItem
+{
+    public void PickUp()
+    {
+        Console.WriteLine("Player picked up a coin!");
+    }
+}
+
+// Implementation of the player character
+public class Player : IPlayer
+{
+    public void PickUpItem(IItem item)
+    {
+        item.PickUp();
+    }
+}
+```
+
+</div>
+</div>
+
+---
+
+## ... Example 2 ...
+
+```c#
+// Main game class
+public class Game
+{
+    private readonly IPlayer player;
+
+    // Constructor injection of player
+    public Game(IPlayer player)
+    {
+        this.player = player;
+    }
+
+    // Game logic to simulate player interaction
+    public void SimulateGame()
+    {
+        // Assume the player interacts with an item (coin) in the game world
+        IItem item = new Coin(); // In a real game, this would come from the game world or level data
+        player.PickUpItem(item);
+    }
+}
+```
