@@ -203,7 +203,7 @@ class Student : Person
 
 - **Types of Dependency Injection in C#:**
 
- - Constructor Injection
+   - Constructor Injection
    - Setter Injection
    - Interface Injection
 
@@ -219,7 +219,7 @@ class Student : Person
 ```c#
 // declare interface
 interface IMyInterface {
-  // prototpes
+  // prototypes
   void MyFuncton(int a, int b);
   void AnotherFunction(); 
 }
