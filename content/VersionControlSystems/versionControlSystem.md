@@ -199,7 +199,7 @@ All commands are prepended with `git`
 
  - **Main**: The default development branch. Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch. 
 
-- **Develop**: This is another branch, which is a way to edit/develop/test code without changing the Master branch. T
+- **Develop**: This is another branch, which is a way to `edit/develop/test` code without changing the Master branch.
 
 - **Topic**: A regular Git branch that is used by a developer to identify a conceptual line of development. 
 
