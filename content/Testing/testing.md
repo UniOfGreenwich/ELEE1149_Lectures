@@ -213,6 +213,8 @@ Scenario: Account has sufficient funds
 
 ```
 
+<!-- Remind students that this is in the exam -->
+
 ---
 
 ## Unit Testing
