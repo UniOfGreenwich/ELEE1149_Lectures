@@ -220,21 +220,22 @@ class Student : Person
 // declare interface
 interface IMyInterface {
   // prototypes
-  void MyFuncton(int a, int b);
-  void AnotherFunction(); 
+  void MyFuncton(int a, int b);public class Example
+{
+    // Static method
+    public static void StaticMethod()
+    {
+        Console.WriteLine("This is a static method.");
+    }
 }
 
-// implement interface
-class MyClass : IMyInterface {
-
-  // can add some fuctionality here
-  void MyFuction(int a,int b){
-      System.out.writeln(a+b);
-  }
-  
-  void AnotherFunction(){
-    // Not inuse.
-  }
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Accessing static method directly using the type
+        Example.StaticMethod();
+    }
 }
 
 ```
@@ -340,3 +341,41 @@ public class Game
     }
 }
 ```
+
+---
+
+## Notes on `static` and `this`
+
+- `static`
+  - the `static` keyword is used to define members (fields, methods, properties, and events) that belong to a type itself, rather than to an instance of the type. This means that you can access static members directly through the type, without needing to create an instance of the type.
+- `this`
+  - whereas `this` is used to refer to the current instance and its instance-specific members. 
+
+ ---
+
+ ## `static` example
+
+See the code snippet below, the `Example` class contains a single `static` method `StaticMethod()`. In the `Main` method of the Program class, we directly call the `StaticMethod()` without needing to create an instance of `Example` class.
+
+<div style="font-size:26px">
+
+```c#
+public class Example
+{
+    // Static method
+    public static void StaticMethod()
+    {
+        Console.WriteLine("This is a static method.");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Accessing static method directly using the type
+        Example.StaticMethod();
+    }
+}
+```
+</div>

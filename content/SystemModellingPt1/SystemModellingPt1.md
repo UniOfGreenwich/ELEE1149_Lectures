@@ -52,17 +52,31 @@ math: true
 
 ## System modelling
 
-- System modelling is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system. 
+- Process of developing abstract models of a system, with each model presenting a different view or perspective of that system. 
 
-- System modelling is representing a system using graphical notation, which is now almost always based on notations in the Unified Modelling Language (UML). 
+- Representing a system using graphical notation, which is now almost always based on notations in the Unified Modelling Language (UML). 
 
-- System modelling helps the analyst to understand the functionality of the system and models are used to communicate with customers.
+- Helps the analyst to understand the functionality of the system and models are used to communicate with customers.
+Software Modelling Object Approach
+
+----
+
+## Software Modelling Object Identification
+
+- A **grammatical approach** based on a natural language description of the system – objects and attributes are nouns; operations or services are verbs. 
+
+- The identification of **tangible things** in the application domain such as aircraft. 
+
+- A **behavioural approach** and identify objects based on what participates in what behaviour such as managers manage.
+
+- A **scenario-based analysis** the objects, attributes and methods in each scenario are identified. 
 
 ---
 
 ## System perspectives
 
 - Different models can be developed to represent the system from different perspectives:
+
   - An external perspective, where you model the context or environment of the system.
   
   - An *interaction perspective*, where you model the interactions between a system and its environment, or between the components of a system.

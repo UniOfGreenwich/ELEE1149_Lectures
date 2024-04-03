@@ -59,6 +59,18 @@ A software process model is an abstract representation of a process. It presents
 
 ---
 
+## Issues related to Software Development
+
+- Heterogeneity 
+
+- Business and social change 
+
+- Security and trust 
+
+- Scale 
+
+---
+
 ## Software Process Descriptions
 
 Process descriptions may also include:
