@@ -198,20 +198,53 @@ math: true
 
 - Gherkin is a plain-text language with a simple structure. It is designed to be easy to learn by non-programmers, yet structured enough to allow concise description of test scenarios and examples to illustrate business rules in most real-world domains.
 
+  ```gherkin
+  Feature: Account Holder withdraws cash
+  
+  Scenario: Account has sufficient funds
+      Given The account balance is $100
+        And the card is valid
+        And the machine contains enough money
+      When the Account Holder requests $20
+      Then the ATM should dispense $20
+        And the account balance should be $80
+        And the card should be returned
+
+  ```
+
+---
+
+## BDD Example 2
+
+<div style="font-size:25px">
 
 ```gherkin
-Feature: Account Holder withdraws cash
- 
-Scenario: Account has sufficient funds
-    Given The account balance is $100
-      And the card is valid
-      And the machine contains enough money
-     When the Account Holder requests $20
-     Then the ATM should dispense $20
-      And the account balance should be $80
-      And the card should be returned
+Feature: User Registration
 
+Scenario: Valid user registration
+    Given a new user wants to register
+    When they provide valid details:
+        | First Name | Last Name | Email               | Password   |
+        | John       | Doe       | john.doe@example.com | secret123 |
+    Then their registration should be successful
+    And they should receive a confirmation email
 ```
+
+```gherkin
+Feature: Shopping Cart Checkout
+
+Scenario: Adding items to the cart
+    Given a user has items in their shopping cart
+    When they add the following items:
+        | Item Name     | Quantity |
+        | T-shirt       | 2        |
+        | Jeans         | 1        |
+        | Sneakers      | 3        |
+    Then the cart should display the correct total quantity
+    And the user can proceed to checkout
+```
+
+</div>
 
 <!-- Remind students that this is in the exam -->
 
