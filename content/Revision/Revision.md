@@ -89,8 +89,11 @@ math: true
 
 ## Software Development
 
-- [](
+- [Software Modelling Slides](https://teachingmaterial.github.io/ELEE1149-Lectures/content/SystemModellingPt1/SystemModellingPt1.html)
   - Object Identification
+  - Can you develop a UML diagram from a description/statment
+  - What is meant by performance, security, safety, availability and maintainability within architecture and system characteristics?
+  - Could you develop a use case diagram for car
 
 ---
 
