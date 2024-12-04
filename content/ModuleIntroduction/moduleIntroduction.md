@@ -12,6 +12,11 @@ style: |
     table{
       font-size: 18 px;
     }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149 | Software Engineering
+auto-scaling: false
 size: 16:9
 paginate: true
 _paginate: false
@@ -33,56 +38,31 @@ math: true
 
 ## Module Aims
 
-This course aims to familiarise [you] with approaches to effective management of the software development lifecycle, from the assessment of a project’s feasibility, through analysis, design, development, verification and validation. 
-
-Not just concerned with the technical process of software production, this course aims to instil [you] with skills in software project management including the tools, methods and theories which support the engineering of software.
+This module is designed to provide [you] with a comprehensive understanding of software engineering. It covers the entire software development lifecycle, including project feasibility assessment, analysis, design, development, verification, and validation, while also emphasizing software project management. Additionally, [you] will gain practical experience in creating small-scale software systems using industry-standard  frameworks and version control systems. The module equips [you] with the skills and knowledge required for effective software engineering, from theory to practical application, ensuring they can successfully manage  projects and develop software solutions.
 
 ---
 
 ## Module Learning Outcomes 
 
+<div style="font-size:24px">
+
 On successful completion of this module a student will be able to:
 
-[1] Identify appropriate software engineering methods for a given project.
+[1]  Recall and explain key concepts and principles of software engineering, including phases of the software development lifecycle and project management methodologies.  
 
-[2] Demonstrate an understanding of the difference between software methods and their suitability to different software development projects.
+[2] Apply software engineering principles to real-world scenarios, demonstrating effective requirements engineering skills, design software solutions, and manage projects effectively.  
 
-[3] Demonstrate effective requirements engineering skills and an appreciation of their importance in the lifecycle of a software project.
+[3]  Analyse and evaluate software development frameworks and tools to make informed choices for specific project needs
 
-[4] Clearly identify the means by which the outcomes of a software project can be verified and validated.
+[4]  Create small-scale software systems from project inception to deployment, integrating theory and practical skills. This involves designing and developing software solutions, implementing version control systems, and ensuring successful project management throughout the lifecycle. 
 
----
-
-## Indicative Content
-
-A range of software engineering topics including:
-
-• Software Engineering Methods
-• Feasibility Assessment
-• Requirements Engineering
-• Systems Design
-• Verification and Validation
-
---- 
-
-
-## Teaching and Learning Activities
-
-The overall challenge will be to produce an item of software (examples such as a patient records database for a hospital, or an information retrieval program for a technical library). The example will involve a specification that is aimed to bring out the different aspects of the system design and development process. From specification changes to bugs on the original role out and changes in platform.
-
+</div>
 
 ---
 
-## Assessments 
-Remember this is a 30 credit module!
+## Assessment
 
-- Group Project - 40% weighting, 40% pass mark.
-  - Page Length - 7 pages per student in the group with the potential for 5 additional pages for material that will not fit into the regular paper format.
-  - Outline Details - A project undertaken across the course demonstrating a practical understanding of the taught content.
-
-  - This will be assessed by formal report using the ACM CHI publication format.
-
-
-- Examination - 60% weighting, 40% pass mark.
-
-Formative Asessment - Tutorial sessions, Mock Exam.
+- Coursework - 100% weighting, 40% pass mark.
+  - Team based software development 
+  
+Formative Assessment/feedback - pull requests and issue tracking.

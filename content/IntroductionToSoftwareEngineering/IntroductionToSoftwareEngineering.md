@@ -12,6 +12,11 @@ style: |
     table{
       font-size: 18 px;
     }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149 | Software Engineering
+auto-scaling: false
 size: 16:9
 paginate: true
 _paginate: false

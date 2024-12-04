@@ -1,21 +1,22 @@
 #! /usr/bin/env bash
-MODULE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]%/*}" )" &> /dev/null && pwd )
+LECTURES_DIR=$( cd -- "$( dirname -- "$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" && pwd )" )" && pwd )
 
-LECTURE_FOLDER=${MODULE_DIR}/$1
+echo $LECTURES_DIR
+LECTURE_FOLDER=${LECTURES_DIR}/content/$1
 
 # default name is $1 if $2 not supplied
 LECTURE_FILENAME=${2:-$1}
 
 if [[ ! -d ${LECTURE_FOLDER} ]];then
-	mkdir -p ${LECTURE_FOLDER}/figures
+	mkdir ${LECTURE_FOLDER}
 fi
 
-source ${MODULE_DIR}/config
+source ${LECTURES_DIR}/scripts/config
 
 cat >> ${LECTURE_FOLDER}/${LECTURE_FILENAME}.md << EOF
 ---
 title: ${LECTURE_FILENAME}
-description: ${LECTURE_FILENAME}
+description: ${LECTURE_FILENAME} slides
 class: gaia
 _class:
   - lead
@@ -36,6 +37,23 @@ style: |
       border: none!important;
       vertical-align: middle;
     }
+    grid {
+      display: grid;
+    }
+    grid-cols {
+      grid-template-columns: repeat(var(--columns, 2), minmax(0, 1fr));
+    }
+    grid-rows {
+      grid-template-rows: repeat(var(--rows, 2), minmax(0, 1fr));
+    }
+    gap {
+      gap: var(--gap, 4px);
+    }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
+footer: $modulecode  | $modulename
 size: 16:9
 paginate: true
 _paginate: false
@@ -45,9 +63,9 @@ math: true
 
 # ${LECTURE_FILENAME}
 
-    Course Code: $coursecode
+    Module Code: $modulecode
 
-    Course Name: $coursename
+    Module Name: $modulename
 
     Credits: $credits
 
@@ -57,4 +75,4 @@ math: true
 EOF
 
 # declutter environment variables
-unset $coursecode $coursename $credits $moduleleader
+unset $modulecode $modulename $credits $moduleleader

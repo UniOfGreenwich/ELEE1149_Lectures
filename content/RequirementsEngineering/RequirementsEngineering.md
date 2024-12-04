@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -40,50 +44,33 @@ math: true
 
 ---
 
-## Topics Covered
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+## What is a Requirement?
 
-- Functional and non-functional requirements
-- Requirements engineering processes
+- A requirement is a statement of a service or a constraint for a system.
+- It can range from high-level goals to detailed technical specifications.
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-
-Question: What is a requirement in software engineering?
+**Key Points:**  
+- Basis for contracts and system development.  
+- Established through the requirements engineering process.
 
 ---
 
-## What is a requirement?
-
-- It may range from a high-level abstract statement of a service or of a system constraint to a detailed mathematical functional specification.
-  
-- This is inevitable as requirements may serve a dual function
-  - May be the basis for a bid for a contract - therefore must be open to interpretation;
-  - May be the basis for the contract itself - therefore must be defined in detail;
-  - Both these statements may be called requirements.
-  
-- Requirements engineering
-  - The process of establishing the services that a customer requires from a system and the constraints under which it operates and is developed.
-
---- 
-
 ## Types of Requirements
 
-- User (customer) requirements
-  - Statements in natural language plus diagrams of the services the system provides and its operational constraints. Written for customers.
-  
-- System requirements
-  - A structured document setting out detailed descriptions of the system’s functions, services and operational constraints. Defines what should be implemented so may be part of a contract between client and contractor.
+### User Requirements  
+- High-level descriptions aimed at customers.  
+- Example: "The system shall allow users to reset their password."
+
+### System Requirements  
+- Detailed technical specifications for developers.  
+- Example: "The system shall send an email with a password reset link within 2 seconds."
 
 ---
 
 ## User and System Requirements Example
+
+<div style="font-size:25px">
 
 **User Requirements Definition**
 
@@ -96,14 +83,16 @@ Question: What is a requirement in software engineering?
   **1.3** A report shall be created for each clinic and shall list the individual drug names, the total number of prescriptions, the number of doses prescribed and the total cost of the prescribed drugs
 ...
 
+</div>
+
 ---
+
 
 ## Readers of different types of requirements specification
 
 ![h:500 center](../../figures/usersystemrequirements.png)
 
 ---
-
 ## System Stakeholders
 
 - Any person or organization who is affected by the system in some way and so who has a legitimate interest
@@ -141,31 +130,68 @@ Question: Who are the stakeholders in the Mentcare system?
 
 ---
 
-## Functional and non-Fucntional Requirements
+## Requirements Engineering Process
 
-<details>
-<summary>What do you think we mean by functional and non-functional requirements?</summary> 
-<p> </p>
-
-- Functional requirements
-  - Statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations.
-  - May state what the system should not do.
-- Non-functional requirements
-  - Constraints on the services or functions offered by the system such as timing constraints, constraints on the development process, standards, etc.
-  - Often applied to the system as a whole rather than individual features or services.
-  
-</details>
+1. **Elicitation:** Gathering requirements from stakeholders.  
+2. **Specification:** Documenting user and system requirements.  
+3. **Validation:** Ensuring requirements align with stakeholder needs.  
+4. **Management:** Handling changes and conflicts in requirements.
 
 ---
 
-## Functional Requirements
+## Requirements Elicitation Challenges
 
-- Describe functionality or system services.
-- Depend on the type of software, expected users and the type of system where the software is used.
-- Functional user requirements may be high-level statements of what the system should do.
-- Functional system requirements should describe the system services in detail.
+- Stakeholders may not know or agree on what they want.  
+- Language barriers and domain-specific terminology.  
+- Evolving business needs and emerging stakeholders.
 
+**Solution:** Use techniques like interviews, scenarios, and prototypes.
 
+---
+
+## Writing Good Requirements
+
+**Guidelines:**  
+- Use a standard format and clear language.  
+- Highlight key information.  
+- Use "shall" for mandatory requirements and "should" for desirable ones.  
+- Include rationale for each requirement.
+
+---
+
+## Validation Techniques
+
+- **Requirements Reviews:** Stakeholder collaboration to identify issues.  
+- **Prototyping:** Building a model to test feasibility.  
+- **Test Cases:** Ensuring requirements are testable and measurable.
+
+---
+
+## Managing Requirements Changes
+
+- Business and technical environments evolve.  
+- Address conflicting user needs through negotiation.  
+- Keep the requirements document up-to-date.
+
+---
+
+## Importance of Requirements Engineering
+
+- Reduces project risks and ensures system success.  
+- Aligns stakeholder expectations with delivered functionality.  
+- Provides a basis for contracts and development plans.
+
+---
+
+## Functional vs Non-Functional Requirements
+
+### Functional Requirements  
+- Define specific behaviors or functions of the system.  
+- Example: "The system shall allow users to log in with their email and password."
+
+### Non-Functional Requirements  
+- Define system constraints like performance or usability.  
+- Example: "The system shall respond to user actions within 200ms."
 
 ---
 
@@ -184,41 +210,7 @@ Question: Who are the stakeholders in the Mentcare system?
 
 ---
 
-## Requirements Imprecision
-
-- Problems arise when functional requirements are not precisely stated.
-- Ambiguous requirements may be interpreted in different ways by developers and users.
-- Consider the term ‘search’ in the first requirement on the previous slide
-  - User intention – search for a patient name across all appointments in all clinics;
-  - Developer interpretation – search for a patient name in an individual clinic. User chooses clinic then search.
-
----
-
-## Requirements completeness and consistency
-
-- In principle, requirements should be both complete and consistent.
-  
-- Complete
-  - They should include descriptions of all facilities required.
-
-- Consistent
-  - There should be no conflicts or contradictions in the descriptions of the system facilities.
-
-- In practice, because of system and environmental complexity, it is not always possible to produce a complete and consistent requirements document.
-
----
-
-## Non-functional Requirements
-
-- Define system properties and constraints e.g. reliability, response time and storage requirements. Constraints are I/O device capability, system representations, etc.
-
-- Non-functional requirements can also be specified referring to  a particular IDE, programming language or development method.
-
-- Non-functional requirements may be more critical than functional requirements. If these are not met, the system may be useless.
-
----
-
-## Types of Non-functional Requirement
+## Types of Non-functional Requirements
 
 ![bg right:65% 80%](../../figures/nonfunctionalgraph.svg)
 
@@ -282,85 +274,30 @@ The system shall implement patient privacy provisions as set out in HStan-03-202
 
 ---
 
-## Metrics for specifying non-functional requirements
+## Requirements Imprecision
 
-<table align=center >
-    <tr>
-        <td>
-        Property
-        </td>
-        <td>
-        Measure
-        </td>
-    </tr>
-    <tr>
-        <td>
-        Speed
-        </td>
-        <td>
-            <ul>
-                <li> Processed transactions/second 
-                <li> User/event response time 
-                <li> screen refresh time
-            </ul>
-        </td>
-    </tr>
-     <tr>
-        <td>
-        Size
-        </td>
-        <td>
-            <ul>
-                <li> MBytes
-                <li> Amount of RAM 
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        Ease of Use
-        </td>
-        <td>
-            <ul>
-                <li> Training Time
-                <li> Number of frames per second 
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        Reliability
-        </td>
-        <td>
-            <ul>
-                <li> Mean time to failure
-                <li>Probability of unavailability
-                <li>Rate of failure occurrence
-                <li>Availability
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        Robustness
-        </td>
-        <td>
-            <ul>
-                <li> Time to restart after failure
-                <li>Percentage of events causing failure
-                <li>Probability of data corruption on failure
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        Portability
-        </td>
-        <td>
-            <ul>
-                <li> Percentage of target dependent statements
-                <li>Number of target systems
-            </ul>
-        </td>
-    </tr>
-</table>
+- Problems arise when functional requirements are not precisely stated.
+- Ambiguous requirements may be interpreted in different ways by developers and users.
+- Consider the term ‘search’ in the first requirement on the previous slide
+  - User intention – search for a patient name across all appointments in all clinics;
+  - Developer interpretation – search for a patient name in an individual clinic. User chooses clinic then search.
+
+---
+
+## Requirements completeness and consistency
+
+- In principle, requirements should be both complete and consistent.
+  
+- Complete
+  - They should include descriptions of all facilities required.
+
+- Consistent
+  - There should be no conflicts or contradictions in the descriptions of the system facilities.
+
+- In practice, because of system and environmental complexity, it is not always possible to produce a complete and consistent requirements document.
+
+----
+
+## Requirements' Evolution
+
+![bg right:40% 50%](../../figures/req_evo.svg)
