@@ -29,9 +29,9 @@ math: true
 
 # Workshop for Phase 1
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
 
 ![bg right:40% 100%](../../figures/Workshop.PNG)

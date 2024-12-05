@@ -1,66 +1,45 @@
 ---
 
 title: Testing
-
 description: Testing
-
 class: gaia
-
 _class:
-
   - lead
-
   - invert
-
 style: |
-
     #img-right{
-
       float: right;
-
     }
-
     img[alt~="center"] {
-
       display: block;
-
       margin: 0 auto;
-
     }
-
     table {
-
         border-collapse: collapse;
-
         font-size: 30px;
-
       }
-
     table, th,tr, td {
-
          border: none!important; 
-
           vertical-align: middle;
-
       }
-
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
-
 paginate: true
-
 _paginate: false
-
 marp: true
-
 math: true
-
 ---
+
+<!-- _footer: "[Download as a PDF](./Testing.pdf)" -->
 
 # Testing
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
 
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 

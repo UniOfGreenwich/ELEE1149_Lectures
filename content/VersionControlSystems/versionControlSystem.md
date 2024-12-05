@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -28,11 +32,14 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./versionControlSystems.pdf)" -->
+
+
 # Version Control Systems
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
@@ -86,6 +93,7 @@ math: true
 ## VCS - List
 
 ![bg right:50% 50%](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Apache_Subversion_logo.svg/1280px-Apache_Subversion_logo.svg.png)
+
 <div style="font-size:22px">
 
 **Local Data Model**
@@ -99,8 +107,6 @@ math: true
 - Subversion (SVN) [OS]
 - Vesta [OS]
 - AccuRev [P]
-- Autodesk Vault [P]
-- CADES [P]
 - ...
 - Vault [P]
 - Visual Source Safe [P]
@@ -207,6 +213,8 @@ All commands are prepended with `git`
 
 ## Git Commands Explained
 
+<div style="font-size:26px">
+
 `clone`​: Get a working copy of the repository​
 
 `fetch`: Update the working copy of the repository without copying or removing any files.​
@@ -220,6 +228,8 @@ All commands are prepended with `git`
 `branch​`: Creates a copy of the repository that can be worked independently from the main branch​
 
 `Merge`: Combine two copies of a repository.​ Conflicts may be present.​
+
+</div>
 
 ---
 

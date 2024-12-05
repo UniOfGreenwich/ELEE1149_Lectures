@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -28,11 +32,12 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./kanban.pdf)" -->
 # Kanban
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 

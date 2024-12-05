@@ -32,11 +32,14 @@ marp: true
 math: true
 ---
 
-# System Modelling Part 1
+<!-- _footer: "[Download as a PDF](./SystemModelling.pdf)" -->
 
-    Course Code: ELEE1149 
+
+# System Modelling
+
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 

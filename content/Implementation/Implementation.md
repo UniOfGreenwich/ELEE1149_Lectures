@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -28,11 +32,13 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./Implementation.pdf)" -->
+
 # Implementation
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
@@ -62,6 +68,8 @@ math: true
 ---
 ## Reuse levels
 
+<div style="font-size:25px">
+
 - **The abstraction level**
   - At this level, you don’t reuse software directly but use knowledge of successful abstractions in the design of your software. 
 
@@ -73,6 +81,8 @@ math: true
 
 - **The system level**
   - At this level, you reuse entire application systems. 
+
+</div>
 
 ---
 

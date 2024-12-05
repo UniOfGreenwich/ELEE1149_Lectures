@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -28,11 +32,13 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./Maintenance.pdf)" -->
+
 # Software Evolution and Maintenance
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
@@ -337,6 +343,8 @@ math: true
 
 ## Bad practices in program code
 
+<div style="font-size:26px">
+
 - Duplicate code 
   - The same or very similar code may be included at different places in a program. This can be removed and implemented as a single method or function that is called as required.
   
@@ -344,6 +352,8 @@ math: true
   - If a method is too long, it should be redesigned as a number of shorter methods.
 - Switch (case) statements 
   - These often involve duplication, where the switch depends on the type of a value. The switch statements may be scattered around a program. In object-oriented languages, you can often use polymorphism to achieve the same thing.
+
+</div>
 
 ---
 

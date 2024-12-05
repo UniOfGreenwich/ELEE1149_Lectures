@@ -21,6 +21,10 @@ style: |
          border: none!important; 
           vertical-align: middle;
       }
+    section::after {
+      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    }
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -30,13 +34,16 @@ math: true
 
 # Continuous Integration and Continuous Deployment
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
     Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
+
+<!-- _footer: "[Download as a PDF](./cicd.pdf)" -->
+
 
 ---
 
@@ -140,7 +147,7 @@ math: true
 
 ## CI/CD Pipelines
 
-![w:900 center](../../figures/cicdIndicator.png)
+![w:750 center](../../figures/cicdIndicator.png)
 
 ---
 

@@ -44,6 +44,8 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./SDLC.pdf)" -->
+
 # Software Development Life Cycle (SDLC)
 
     Module Code: ELEE1149
@@ -77,7 +79,7 @@ The Software Development Lifecycle (SDLC) is a structured approach to software d
 
 ## Software Process Models
 
-<div style="font-size:25px">
+<div style="font-size:24px">
 
 - **Waterfall**
   - A sequential software development model where each phase—requirements, design, implementation, testing, deployment, and maintenance—must be completed before moving to the next, making it ideal for well-defined projects with minimal expected changes.

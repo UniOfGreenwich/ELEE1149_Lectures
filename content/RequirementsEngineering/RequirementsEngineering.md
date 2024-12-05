@@ -32,11 +32,13 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./RequirementsEngineering.pdf)" -->
+
 # Requirements Engineering
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
@@ -109,6 +111,8 @@ Question: Who are the stakeholders in the Mentcare system?
 
 ## Stakeholders in the Mentcare system
 
+<div style="font-size:25px">
+
 - Patients whose information is recorded in the system.
 - Doctors who are responsible for assessing and treating patients.
 - Nurses who coordinate the consultations with doctors and administer some treatments.
@@ -117,6 +121,8 @@ Question: Who are the stakeholders in the Mentcare system?
 - A medical ethics manager who must ensure that the system meets current ethical guidelines for patient care.
 - Health care managers who obtain management information from the system.
 - Medical records staff who are responsible for ensuring that system information can be maintained and preserved, and that record keeping procedures have been properly implemented.
+
+</div>
 
 ---
 

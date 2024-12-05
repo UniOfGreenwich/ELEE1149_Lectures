@@ -15,8 +15,7 @@ style: |
     section::after {
       content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
     }
-footer: ELEE1149 | Software Engineering
-auto-scaling: false
+footer: ELEE1149  | Software Engineering
 size: 16:9
 paginate: true
 _paginate: false
@@ -24,11 +23,13 @@ marp: true
 math: true
 ---
 
+<!-- _footer: "[Download as a PDF](./moduleIntroduction.pdf)" -->
+
 # Introduction to the Module
 
-    Course Code: ELEE1149 
+    Module Code: ELEE1149 
     
-    Course Name: Software Engineering
+    Module Name: Software Engineering
 
     Credits: 15
 
@@ -62,7 +63,7 @@ On successful completion of this module a student will be able to:
 
 ## Assessment
 
-- Coursework - 100% weighting, 40% pass mark.
+- Modulework - 100% weighting, 40% pass mark.
   - Team based software development 
   
 Formative Assessment/feedback - pull requests and issue tracking.
