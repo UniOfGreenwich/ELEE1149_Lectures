@@ -24,7 +24,8 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](./RiskManagement.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/RiskManagement/RiskManagement.pdf)" -->
+
 
 # Risk Management
 

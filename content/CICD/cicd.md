@@ -42,7 +42,7 @@ math: true
 
     Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
 
-<!-- _footer: "[Download as a PDF](./cicd.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/cicd/cicd.pdf)" -->
 
 
 ---

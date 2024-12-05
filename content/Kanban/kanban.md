@@ -31,8 +31,8 @@ _paginate: false
 marp: true
 math: true
 ---
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/Kanban/kanban.pdf)" -->
 
-<!-- _footer: "[Download as a PDF](./kanban.pdf)" -->
 # Kanban
 
     Module Code: ELEE1149 

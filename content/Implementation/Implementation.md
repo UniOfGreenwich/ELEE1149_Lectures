@@ -32,7 +32,7 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](./Implementation.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/Implmentation/Implementation.pdf)" -->
 
 # Implementation
 

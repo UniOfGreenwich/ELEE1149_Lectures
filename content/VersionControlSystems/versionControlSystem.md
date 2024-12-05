@@ -32,7 +32,9 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](./versionControlSystems.pdf)" -->
+
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/VersionControlSystems/versionControlSystem.pdf)" -->
+
 
 
 # Version Control Systems

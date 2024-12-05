@@ -52,7 +52,6 @@ style: |
     section::after {
       content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
     }
-footer: ELEE1149  | Software Engineering
 footer: $modulecode  | $modulename
 size: 16:9
 paginate: true
@@ -60,6 +59,8 @@ _paginate: false
 marp: true
 math: true
 ---
+
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/${modulecode}-Lectures/raw/gh-pages/content/${LECTURE_FILENAME}/${LECTURE_FILENAME}.pdf)" -->
 
 # ${LECTURE_FILENAME}
 

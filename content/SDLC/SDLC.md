@@ -44,7 +44,7 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](./SDLC.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/SDLC/SDLC.pdf)" -->
 
 # Software Development Life Cycle (SDLC)
 
@@ -90,9 +90,8 @@ The Software Development Lifecycle (SDLC) is a structured approach to software d
 - **DevOps**
   - A culture and set of practices combining development (Dev) and operations (Ops) teams to automate processes, improve collaboration, and ensure continuous integration and delivery (CI/CD) for faster and more reliable software delivery.
 
->In practice, most large systems are developed using a process that incorporates elements from all of these models.
-
 </div>
+
 
 ---
 
