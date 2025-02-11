@@ -111,7 +111,7 @@ In a classic Kanban board model, there are three columns, as shown in the pictur
 ---
 ## Kanban Diagram
 
-![ w:900 center ](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/Kanban_board-elements.png)
+![ w:800 center ](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/Kanban_board-elements.png)
 
 <!--
 
@@ -172,7 +172,7 @@ At the core of Kanban is the concept of “Flow”. This means that the cards sh
 
 - In Kanban we use cumulative flow diagrams to show how much work we are completing
 
-![w:800 center](../../figures/cumulativeFlow.png)
+![w:700 center](../../figures/cumulativeFlow.png)
 
 ---
 
