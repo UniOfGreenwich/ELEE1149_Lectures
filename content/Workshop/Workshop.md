@@ -3,7 +3,7 @@ title: Version Control Systems
 description: Version Control Systems
 class: gaia
 _class:
-  - lead
+  - invert
 style: |
     #img-right{
       float: right;
@@ -27,7 +27,7 @@ marp: true
 math: true
 ---
 
-# Workshop for Phase 1
+# Workshop
 
     Module Code: ELEE1149 
     
