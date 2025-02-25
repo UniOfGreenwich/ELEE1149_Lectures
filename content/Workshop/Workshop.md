@@ -1,6 +1,6 @@
 ---
-title: Version Control Systems
-description: Version Control Systems
+title: Workshop
+description: Workshop sldies
 class: gaia
 _class:
   - invert
