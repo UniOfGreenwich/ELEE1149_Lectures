@@ -34,4 +34,4 @@ math: true
     Module Name: Software Engineering
 
 
-![bg right:40% 100%](../../figures/Workshop.PNG)
+![bg right:40% 100%](https://imgs.xkcd.com/comics/dependency.png)
