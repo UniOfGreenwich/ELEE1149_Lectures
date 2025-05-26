@@ -153,19 +153,6 @@ math: true
 
 ---
 
-## Test Driven Development
-
-- Test driven development is a skill that is highly sought after…
-
-- … and one that not many graduates possess
-
-- >“I didn’t realise how different my university experience was from industry standard coding. When we briefly looked at unit testing at uni we wrote the code first and then the test; here I’ve written more tests than actual lines of code, and always the tests first.”
-
-
- - TDD can lead to Behavior Driven Development (BDD)
-
----
-
 ## TDD vs BDD
 
 - TDD is more developer-centric, revolving around code correctness, with programming language-specific frameworks. 
@@ -180,19 +167,18 @@ math: true
 - Gherkin is a plain-text language with a simple structure. It is designed to be easy to learn by non-programmers, yet structured enough to allow concise description of test scenarios and examples to illustrate business rules in most real-world domains.
 
 
-```gherkin
-Feature: Account Holder withdraws cash
- 
-Scenario: Account has sufficient funds
-    Given The account balance is $100
-      And the card is valid
-      And the machine contains enough money
-     When the Account Holder requests $20
-     Then the ATM should dispense $20
-      And the account balance should be $80
-      And the card should be returned
-
-```
+  ```gherkin
+  Feature: Account Holder withdraws cash
+  
+  Scenario: Account has sufficient funds
+      Given The account balance is $100
+        And the card is valid
+        And the machine contains enough money
+      When the Account Holder requests $20
+      Then the ATM should dispense $20
+        And the account balance should be $80
+        And the card should be returned
+  ```
 
 ---
 
@@ -239,7 +225,6 @@ def test_abs()
 ## Unit Tests - C#
 
 ```csharp
-
 [TestClass]
 public class MathTests
 {
@@ -296,6 +281,8 @@ public class MathTests
 
 ## Testing as part of the Pipeline
 
+<div style="font-size:27px">
+
 - Remember when we said last week that we ran our tests before we deployed our software?
   - What we really mean are our **functional** tests (Unit, Feature, System and Release tests)
 
@@ -305,18 +292,5 @@ public class MathTests
 
 - Security testing should always involve a third party. Either you don’t have the expertise in your organisation or you will be biased and fail to test something important.
 
----
-
-## Summary & takeaways
-
-- Four types of testing. You should focus most on functional testing, and of those functional tests concentrate on unit tests.
-
-- All companies with software engineering teams will use TDD
-  - Remember **Arrange-Action-Assert** …
-  - …and Red, Green, Refactor.
-
-- Testing is a requirement in Agile, it isn’t optional 
-
-- In most agile teams testing is undertaken by everyone, the ‘software tester’ is dying out rapidly.
-
+</div>
 
