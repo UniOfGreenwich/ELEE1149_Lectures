@@ -1,39 +1,44 @@
 ---
-title: Introduction To Module
-description: Introduction To Module ppt
-class: gaia
-_class:
-  - lead
-  - invert
-style: |
-    #img-right{
-      float: right;
-    }
-    table{
-      font-size: 18 px;
-    }
-    section::after {
-      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-    }
-footer: ELEE1149  | Software Engineering
-size: 16:9
-paginate: true
-_paginate: false
 marp: true
-math: true
 ---
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/ModuleIntroduction/moduleIntroduction.pdf)" -->
+<!--
+# Metadata
+title: Module Introduction
+author: Seb Blair (CompEng0001)
+description: Summary of module handbook
+keywords: module handbook
+lang: en
 
-# Introduction to the Module
+# Slide styling
+theme: uog-theme
+_class: lead title
+paginate: true
+_paginate: false
+transition: fade 250ms
 
-    Module Code: ELEE1149 
-    
-    Module Name: Software Engineering
+style: |
+  header em { font-style: normal; view-transition-name: header; }
+  header strong { font-weight: inherit; view-transition-name: header2; }
+  header:not:has(em) { view-transition-name: header; }
+-->
 
-    Credits: 15
+# Module Introduction
 
-    Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
+<div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
+
+
+
+```swift
+let module = Module(
+            code: "ELEE1149", 
+            name: "Software Engineering", 
+            credits: 15,
+            moduleLeader: "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA"
+    )
+```
+
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/ModuleIntroduction/moduleIntroduction.pdf)" -->
 
 ---
 
@@ -43,15 +48,17 @@ This module is designed to provide [you] with a comprehensive understanding of s
 
 ---
 
-## Module Learning Outcomes 
+<style scoped>ul { list-style: list; padding: 100; }</style>
 
-<div style="font-size:24px">
+## Module Learning Outcomes 
 
 On successful completion of this module a student will be able to:
 
+<div style="padding-left:100px;padding-right:200px;">
+
 [1]  Recall and explain key concepts and principles of software engineering, including phases of the software development lifecycle and project management methodologies.  
 
-[2] Apply software engineering principles to real-world scenarios, demonstrating effective requirements engineering skills, design software solutions, and manage projects effectively.  
+[2]  Apply software engineering principles to real-world scenarios, demonstrating effective requirements engineering skills, design software solutions, and manage projects effectively.  
 
 [3]  Analyse and evaluate software development frameworks and tools to make informed choices for specific project needs
 
@@ -61,9 +68,16 @@ On successful completion of this module a student will be able to:
 
 ---
 
-## Assessment
+<style scoped>ul { list-style: square; padding: 100; }</style>
 
-- Modulework - 100% weighting, 40% pass mark.
-  - Team based software development 
+## Assessments
+
+<div style="padding-top:50px; padding-left:100px;padding-right:200px;">
+
+1. Coursework - 100% weighting, 40% pass mark.
   
+  - Team based software development 
+
+<br>
+
 Formative Assessment/feedback - pull requests and issue tracking.
