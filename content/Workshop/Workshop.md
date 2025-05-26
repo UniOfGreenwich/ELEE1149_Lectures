@@ -1,9 +1,9 @@
 ---
-title: Version Control Systems
-description: Version Control Systems
+title: Workshop
+description: Workshop sldies
 class: gaia
 _class:
-  - lead
+  - invert
 style: |
     #img-right{
       float: right;
@@ -27,11 +27,11 @@ marp: true
 math: true
 ---
 
-# Workshop for Phase 1
+# Workshop
 
     Module Code: ELEE1149 
     
     Module Name: Software Engineering
 
 
-![bg right:40% 100%](../../figures/Workshop.PNG)
+![bg right:40% 100%](https://imgs.xkcd.com/comics/dependency.png)
