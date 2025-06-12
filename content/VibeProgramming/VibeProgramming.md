@@ -330,6 +330,7 @@ start = time.time()
 
 chars = 'abcdefghijklmnopqrstuvwxyz'
 guess = []
+
 for val in range(5):
   a = [i for i in chars]
   for y in range(val):
@@ -355,8 +356,10 @@ use std::time::Instant;
 use std::io::{self, Write};
 
 fn main() {
+
     print!("Enter Password: ");
     io::stdout().flush().unwrap();
+  
     let mut password = String::new();
     io::stdin().read_line(&mut password).unwrap();
     let password = password.trim();
@@ -386,6 +389,307 @@ fn main() {
 
 </div>
 </div>
+
+
+<style scoped>
+.columns-2 >  div:nth-of-type(1) pre:nth-of-type(1) code {
+  --highlight-line-begin: 3;
+  --highlight-lines: 1;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+.columns-2 >  div:nth-of-type(2) pre:nth-of-type(1) code {
+  --highlight-line-begin: 6;
+  --highlight-lines: 8;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+</style>
+
+---
+
+<div style="padding-top:30px;padding-bottom:3px">
+
+> Prompt: here is my python script, I want to change code base to rust: [Copilot]
+
+</div>
+
+<div class="columns-2" style="display: flex; gap: 2rem; --col-1-grow: 1; --col-2-grow: 1.5;">
+<div style="flex: var(--col-1-grow) 1 0; min-width: 0; font-size: 28px;">
+
+**Python**
+
+```py
+import time
+
+password = input('Enter Password'):
+start = time.time()
+
+chars = 'abcdefghijklmnopqrstuvwxyz'
+guess = []
+
+for val in range(5):
+  a = [i for i in chars]
+  for y in range(val):
+    a = [x+i for i in chars for x in a]
+  guess = guess+a
+
+  if password in guess:
+    break
+end = time.time()
+clock = str(end - start)
+
+print('Your password: ' + password)
+print('Time taken: ' + clock)
+```
+</div>
+
+<div style="flex: var(--col-2-grow) 1 0; min-width: 0; font-size: 30px;">
+
+**rust**
+
+```rust
+use std::time::Instant;
+use std::io::{self, Write};
+
+fn main() {
+
+    print!("Enter Password: ");
+    io::stdout().flush().unwrap();
+  
+    let mut password = String::new();
+    io::stdin().read_line(&mut password).unwrap();
+    let password = password.trim();
+
+    let start = Instant::now();
+
+    let chars = "abcdefghijklmnopqrstuvwxyz";
+    let mut guess = Vec::new();
+
+    for val in 0..5 {
+        let mut a: Vec<String> = chars.chars().map(|c| c.to_string()).collect();
+        for _ in 0..val {
+            a = a.iter().flat_map(|x| chars.chars().map(move |c| format!("{}{}", x, c))).collect();
+        }
+        guess.extend(a);
+
+        if guess.contains(&password.to_string()) {
+            break;
+        }
+    }
+
+    let duration = start.elapsed();
+    println!("Your password: {}", password);
+    println!("Time taken: {:?}", duration);
+}
+```
+
+</div>
+</div>
+
+
+<style scoped>
+.columns-2 >  div:nth-of-type(1) pre:nth-of-type(1) code {
+  --highlight-line-begin: 6;
+  --highlight-lines: 2;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+.columns-2 >  div:nth-of-type(2) pre:nth-of-type(1) code {
+  --highlight-line-begin: 15;
+  --highlight-lines: 2;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+</style>
+
+
+---
+
+<div style="padding-top:30px;padding-bottom:3px">
+
+> Prompt: here is my python script, I want to change code base to rust: [Copilot]
+
+</div>
+
+<div class="columns-2" style="display: flex; gap: 2rem; --col-1-grow: 1; --col-2-grow: 1.5;">
+<div style="flex: var(--col-1-grow) 1 0; min-width: 0; font-size: 28px;">
+
+**Python**
+
+```py
+import time
+
+password = input('Enter Password'):
+start = time.time()
+
+chars = 'abcdefghijklmnopqrstuvwxyz'
+guess = []
+
+for val in range(5):
+  a = [i for i in chars]
+  for y in range(val):
+    a = [x+i for i in chars for x in a]
+  guess = guess+a
+
+  if password in guess:
+    break
+end = time.time()
+clock = str(end - start)
+
+print('Your password: ' + password)
+print('Time taken: ' + clock)
+```
+</div>
+
+<div style="flex: var(--col-2-grow) 1 0; min-width: 0; font-size: 30px;">
+
+**rust**
+
+```rust
+use std::time::Instant;
+use std::io::{self, Write};
+
+fn main() {
+
+    print!("Enter Password: ");
+    io::stdout().flush().unwrap();
+  
+    let mut password = String::new();
+    io::stdin().read_line(&mut password).unwrap();
+    let password = password.trim();
+
+    let start = Instant::now();
+
+    let chars = "abcdefghijklmnopqrstuvwxyz";
+    let mut guess = Vec::new();
+
+    for val in 0..5 {
+        let mut a: Vec<String> = chars.chars().map(|c| c.to_string()).collect();
+        for _ in 0..val {
+            a = a.iter().flat_map(|x| chars.chars().map(move |c| format!("{}{}", x, c))).collect();
+        }
+        guess.extend(a);
+
+        if guess.contains(&password.to_string()) {
+            break;
+        }
+    }
+
+    let duration = start.elapsed();
+    println!("Your password: {}", password);
+    println!("Time taken: {:?}", duration);
+}
+```
+
+</div>
+</div>
+
+
+<style scoped>
+.columns-2 >  div:nth-of-type(1) pre:nth-of-type(1) code {
+  --highlight-line-begin: 9;
+  --highlight-lines: 8;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+.columns-2 >  div:nth-of-type(2) pre:nth-of-type(1) code {
+  --highlight-line-begin: 18;
+  --highlight-lines: 11;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+</style>
+
+---
+
+<div style="padding-top:30px;padding-bottom:3px">
+
+> Prompt: here is my python script, I want to change code base to rust: [Copilot]
+
+</div>
+
+<div class="columns-2" style="display: flex; gap: 2rem; --col-1-grow: 1; --col-2-grow: 1.5;">
+<div style="flex: var(--col-1-grow) 1 0; min-width: 0; font-size: 28px;">
+
+**Python**
+
+```py
+import time
+
+password = input('Enter Password'):
+start = time.time()
+
+chars = 'abcdefghijklmnopqrstuvwxyz'
+guess = []
+
+for val in range(5):
+  a = [i for i in chars]
+  for y in range(val):
+    a = [x+i for i in chars for x in a]
+  guess = guess+a
+
+  if password in guess:
+    break
+end = time.time()
+clock = str(end - start)
+
+print('Your password: ' + password)
+print('Time taken: ' + clock)
+```
+</div>
+
+<div style="flex: var(--col-2-grow) 1 0; min-width: 0; font-size: 30px;">
+
+**rust**
+
+```rust
+use std::time::Instant;
+use std::io::{self, Write};
+
+fn main() {
+
+    print!("Enter Password: ");
+    io::stdout().flush().unwrap();
+  
+    let mut password = String::new();
+    io::stdin().read_line(&mut password).unwrap();
+    let password = password.trim();
+
+    let start = Instant::now();
+
+    let chars = "abcdefghijklmnopqrstuvwxyz";
+    let mut guess = Vec::new();
+
+    for val in 0..5 {
+        let mut a: Vec<String> = chars.chars().map(|c| c.to_string()).collect();
+        for _ in 0..val {
+            a = a.iter().flat_map(|x| chars.chars().map(move |c| format!("{}{}", x, c))).collect();
+        }
+        guess.extend(a);
+
+        if guess.contains(&password.to_string()) {
+            break;
+        }
+    }
+
+    let duration = start.elapsed();
+    println!("Your password: {}", password);
+    println!("Time taken: {:?}", duration);
+}
+```
+
+</div>
+</div>
+
+
+<style scoped>
+.columns-2 >  div:nth-of-type(1) pre:nth-of-type(1) code {
+  --highlight-line-begin: 20;
+  --highlight-lines: 2;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+.columns-2 >  div:nth-of-type(2) pre:nth-of-type(1) code {
+  --highlight-line-begin: 30;
+  --highlight-lines: 3;
+  --highlight-line-color: rgb(255 255 255 / 15%);
+}
+</style>
+
 
 ---
 
@@ -495,19 +799,23 @@ div:nth-of-type(1) pre:nth-of-type(1) code {
 }
 </style>
 
+<!-- _footer: https://www.cve.org/CVERecord?id=CVE-2014-6271 -->
+
 ---
 
 ## Hallucinations
 
 <div class="columns-2">
-<div>
+<div style="padding-top:150px">
 
 - Security vulnerabilities
-
+<br>
 - Library does not exit
 
+  - or imaginary version number
+<br>
 - Malcious actor could create it...
-
+<br>
 - If in doubt check source code of a package, usually on GitHub. 
 
 </div>
@@ -561,7 +869,7 @@ div:nth-of-type(1) pre:nth-of-type(1) code {
 
 ---
 
-## Pylings - Help with giving focus
+## Pylings - 
 
 
 <div class="columns-2" style="display: flex; gap: 2rem; --col-1-grow: 1; --col-2-grow: 1.5;">
@@ -577,6 +885,13 @@ elif event.key == "l":
     event.key = "tab"
 ...
 ```
+
+<div style="font-size:28px">
+
+- `textual.event.key` => Sent when the user hits a key on the keyboard.
+  - should be read only?
+
+</div>
 
 </div>
 <div style="flex: var(--col-2-grow) 1 0; min-width: 0; font-size: 30px;">
@@ -595,11 +910,10 @@ div:nth-of-type(1) pre:nth-of-type(1) code {
 }
 </style>
 
-<!-- _footer: https://pypi.org/project/pylings/ -->
+<!-- _footer: https://pypi.org/project/pylings/ || https://textual.textualize.io/api/events/#textual.events.Key-->
 
 
 ---
-
 
 <!-- header: "Vibe Programming" -->
 <!-- class: lead -->
