@@ -153,7 +153,11 @@ margin: 0 auto;
 
 ## Continuous Integration
 
+<div style="padding-top:50px">
+
 ![w:1400 drop-shadow](../../figures/CI_Flow.png "centered")
+
+</div>
 
 ---
 
@@ -171,7 +175,7 @@ margin: 0 auto;
 
 ## CI/CD Pipelines
 
-<div class="columns-2" >
+<!-- <div class="columns-2" >
 <div style="padding-top:250px">
 
 - Modern CI and CD practices are referred to as a CI/CD pipeline and can handle every stage of the build process from commit to deployment.
@@ -180,6 +184,17 @@ margin: 0 auto;
 <div style="padding-top:225px">
 
 ![w:900 invert](../../figures/cicdPipelines.png)
+
+</div>
+</div> -->
+
+<div style="padding-top:70px">
+
+- Modern CI and CD practices are referred to as a CI/CD pipeline and can handle every stage of the build process from commit to deployment.
+
+<div style="padding-top:20px">
+
+![w:1100 invert](../../figures/cicdPipelines.png "centered")
 
 </div>
 </div>
@@ -220,7 +235,7 @@ margin: 0 auto;
 
 
 </div>
-<div style="padding-top:100px">
+<div style="padding-top:80px">
 
 ```yaml
 on:
@@ -250,33 +265,95 @@ jobs:
 
 ## Benefits of GitHub Actions
 
+<div style="padding-top:50px">
+
 - **Automation**:
   - Automated builds, tests, and deployments.
+<br>
 - **Scalability**:
   - Run workflows in parallel.
+<br>
 - **Integration**:
   - Connect with cloud providers, databases, and third-party tools.
+<br>
 - **Community Support**:
   - Use and contribute to the GitHub Marketplace.
+
+</div>
 
 ---
 
 ## Setting Up GitHub Actions
 
+<div class="columns-2" style="padding-top:50px">
+
+<div>
+
 1. **Create a `.github/workflows` folder**:
    - Store workflow YAML files here.
+<br>
 2. **Define a Workflow**:
    - Specify triggers, jobs, and steps.
+<br>
 3. **Use Marketplace Actions**:
    - Pre-built solutions for common tasks.
+
+<br>
+
+![](../../figures/github-workflows-structure.png "centered")
+
+</div>
+<div>
+
+```yml
+name: deploy-content
+concurrency: deploy-content
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: make build directory
+        run:  mkdir build/ && cp -r figures build/figures
+
+      - name: build index
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: index.md -o build/index.html
+        env:
+          MARP_USER: root:root
+
+      - name: build content html
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: -I content/ -o build/content/ --html --allow-local-files --theme themes/uog-theme.css
+        env:
+          MARP_USER: root:root
+  
+      - name: deploy content
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/ 
+```
+
+
+</div>
+</div>
 
 ---
 
 ## Example: Deploying a Static Website
 
-
 <div style="font-size:24px; padding-left:300px;padding-right:300px;padding-top:100px;">
-
 
 ```yaml
 name: Deploy Website
@@ -380,6 +457,33 @@ jobs:
 
 ---
 
+<!-- header: "" -->
+<!-- _class: lead -->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
+
+# Code Coverage
+
+---
+
+<!-- header: "_Code Coverage_" -->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
+
 ## Code Coverage
 
 - Code coverage is a metric used to measure the effectiveness of software testing. It refers to the percentage of code lines or functions that are executed by automated tests. 
@@ -392,6 +496,9 @@ jobs:
 
 ## A Program & its Control Flow Graph
 
+<div class="columns-2">
+<div style="padding-top:100px">
+
 ```py
 s0: z = input()
 s1: x = input()
@@ -403,21 +510,32 @@ s5: print(y)
 s6: return
 ```
 
-- Each node is a statement
+<br>
 
+- Each node is a statement
+<br>
 - Each solid edge is control flow edge between two statements
 
+</div>
+<div>
 
 
-![bg right:30% 50%](../../figures/CFG.png)
+![w:300](../../figures/CFG.png "centered")
+
+</div>
+</div>
 
 ---
 
 ## Node and Edge Coverage*
 
+<br>
+
 - **Node (Statement) Coverage**
   - Fraction of graph nodes covered by tests
   - Testing Goal: Every node should executed at least once
+
+<br>
 
 - **(Control Flow) Edge Coverage**
   - Fraction of graph edges covered by tests
@@ -427,12 +545,22 @@ s6: return
 
 ## (Control Flow) Path Coverage*
 
+
+<div class="columns-2">
+<div style="padding-top:100px">
+
 - **Path** is a sequence of nodes in a graph such that consecutive ndoes in the path are connected by a edge in the graph
 - **(Control Flow) Path Coverage**
   - Fraction of graph paths convered by tests
   - How can we deal with program loops, i.e graphs with infinite number of paths?
 
-![bg right:30% 30%](../../figures/CFG_path_coverage.png)
+</div>
+<div>
+
+![w:200](../../figures/CFG_path_coverage.png "centered")
+
+</div>
+</div>
 
 ---
 
