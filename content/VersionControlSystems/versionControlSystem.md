@@ -8,7 +8,7 @@ math: true
 title: Version Control Systems
 author: Seb Blair (CompEng0001)
 description: Lecture slides on version control systems.
-keywords: module handbook
+keywords: git GitHub SCM
 lang: en
 
 # Slide styling
@@ -23,7 +23,7 @@ style: |
   header strong { font-weight: inherit; view-transition-name: header2; }
   header:not:has(em) { view-transition-name: header; }
 
-  -->
+-->
 
 <style scoped>
 h1 {
@@ -38,18 +38,18 @@ margin: 0 auto;
 
 <div align=center style="font-size:76px;padding-left:300px;padding-right:300px;" >
 
-```js
-const module = {
-  code: "ELEE1149",
-  name: "Software Engineering",
-  credits: 15,
-  moduleLeader: "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA"
-};
+```py
+module = Module(
+  code="ELEE1149",
+  name="Software Engineering",
+  credits=15,
+  module_leader="Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA"
+)
 ```
 
 </div>
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1147_Lectures/raw/main/content/VersionControlSystems/versionControlSystem.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/VersionControlSystems/versionControlSystem.pdf)" -->
 
 ---
 
