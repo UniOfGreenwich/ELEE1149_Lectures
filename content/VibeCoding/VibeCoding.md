@@ -5,9 +5,9 @@ math: true
 
 <!--
 # Metadata
-title: Vibe Programming
+title: Vibe Coding
 author: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
-description: Lecture slides on Vibe Programming.
+description: Lecture slides on Vibe Coding.
 keywords: module handbook
 lang: en
 
@@ -34,7 +34,7 @@ h1 {
 }
 </style>
 
-# Vibe Programming
+# Vibe Coding
 
 <div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
 
@@ -49,7 +49,7 @@ module = Module(
 
 </div>
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/main/content/VibeProgramming/VibeProgramming.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/main/content/VibeCoding/VibeCoding.pdf)" -->
 
 ---
 
@@ -57,7 +57,7 @@ module = Module(
 h1 { view-transition-name: header2; }
 </style>
 
-<!-- header: "_Vibe Programming_" -->
+<!-- header: "_Vibe Coding_" -->
 
 ## What is it?
 
@@ -68,7 +68,7 @@ h1 { view-transition-name: header2; }
 
 <br>
 
-- Vibe programming refers to AI-augmented or AI-dependent programming workflows where the user relies on natural language prompts, generated code snippets, and automated completions to develop software systems, often without fully understanding the underlying code mechanics.
+- Vibe Coding refers to AI-augmented or AI-dependent programming workflows where the user relies on natural language prompts, generated code snippets, and automated completions to develop software systems, often without fully understanding the underlying code mechanics.
 
 <br>
 
@@ -102,7 +102,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "_Vibe Programming_ > **Impacts | Costs**" -->
+<!-- header: "_Vibe Coding_ > **Impacts | Costs**" -->
 
 
 <div align="center" style="padding-top:150px">
@@ -154,7 +154,7 @@ Google reported in 2021 that its U.S. datacenters consumed 12.7 billion liters o
 
 ---
 
-<!-- header: "Vibe Programming > Impacts | Costs" -->
+<!-- header: "Vibe Coding > Impacts | Costs" -->
 
 <div align="center" style="padding-top:150px">
 
@@ -177,7 +177,7 @@ Google reported in 2021 that its U.S. datacenters consumed 12.7 billion liters o
 
 ---
 
-<!-- header: "Vibe Programming" -->
+<!-- header: "Vibe Coding" -->
 <!-- class: lead -->
 
 # Costly Errors
@@ -189,7 +189,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "_Vibe Programming_ > **Costly Errors**" -->
+<!-- header: "_Vibe Coding_ > **Costly Errors**" -->
 
 <div class="columns-2" style="padding-top:7s0px">
 <div>
@@ -216,7 +216,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "Vibe Programming > Costly Errors" -->
+<!-- header: "Vibe Coding > Costly Errors" -->
 
 <div class="columns-2" style="padding-top:10px">
 <div style="padding-top:200px;padding-left:200px">
@@ -260,7 +260,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "Vibe Programming" -->
+<!-- header: "Vibe Coding" -->
 <!-- class: lead -->
 
 
@@ -275,7 +275,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "_Vibe Programming_ > **Prompt Engineering**" -->
+<!-- header: "_Vibe Coding_ > **Prompt Engineering**" -->
 
 <div class="columns-2">
 <div style="padding-top:225px">
@@ -299,7 +299,7 @@ h1 { view-transition-name: header2; }
 <!-- _footer: https://x.com/gdb/status/1878489681702310392 -->
 
 ---
-<!-- header: "Vibe Programming > Prompt Engineering" -->
+<!-- header: "Vibe Coding > Prompt Engineering" -->
 
 <div style="font-size:28px">
 
@@ -932,7 +932,7 @@ div:nth-of-type(1) pre:nth-of-type(1) code {
 
 ---
 
-<!-- header: "Vibe Programming" -->
+<!-- header: "Vibe Coding" -->
 <!-- class: lead -->
 
 <style scoped>
@@ -943,7 +943,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "_Vibe Programming_ > **Job Prospects**" -->
+<!-- header: "_Vibe Coding_ > **Job Prospects**" -->
 
 <div class="columns-2" style="padding-top:10px">
 <div style="padding-top:10px">
@@ -970,7 +970,7 @@ h1 { view-transition-name: header2; }
 
 ---
 
-<!-- header: "Vibe Programming" -->
+<!-- header: "Vibe Coding" -->
 
 <div style="padding-bottom:100px">
 
