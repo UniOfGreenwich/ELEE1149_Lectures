@@ -36,7 +36,7 @@ margin: 0 auto;
 
 <div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/main/content/Kanban/kanban.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/Kanban/kanban.pdf)" -->
 
 ```Go
 module := Module{

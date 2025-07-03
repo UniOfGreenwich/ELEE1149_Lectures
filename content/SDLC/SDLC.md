@@ -49,7 +49,7 @@ const module: Module = {
 
 </div>
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1147_Lectures/raw/main/content/SDLC/SDLC.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/SDLC/SDLC.pdf)" -->
 
 ----
 

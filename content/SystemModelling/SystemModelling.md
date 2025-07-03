@@ -32,7 +32,7 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/gh-pages/content/SystemModelling/SystemModelling.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/SystemModelling/SystemModelling.pdf)" -->
 
 # System Modelling
 

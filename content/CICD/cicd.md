@@ -45,7 +45,7 @@ let module = Module {
 }
 ```
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149-Lectures/raw/main/content/cicd/cicd.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/cicd/cicd.pdf)" -->
 
 
 ---

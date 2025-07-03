@@ -49,7 +49,7 @@ module = Module(
 
 </div>
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/content/CVE/CVE.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/CVE/CVE.pdf)" -->
 
 ---
 

@@ -48,7 +48,7 @@ module_leader  db "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA",
 
 </div>
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1147_Lectures/raw/main/content/Testing/Testing.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1149_Lectures/raw/main/content/Testing/Testing.pdf)" -->
 
 ---
 
